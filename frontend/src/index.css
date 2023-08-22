@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+
+header a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.site-container {
+  min-height: 100vh;
+}
+.products {
+  display: flex;
+
+  justify-content: center;
+}
+
+.product {
+  border: 1px #404040 solid;
+  margin: 1rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+.btn-primary,
+.btn-outline-primary {
+  background-color: #ffc800;
+  color: black;
+}
+.rating span {
+  color: #ffc800;
+}
+
+.img-large {
+  max-width: 100%;
+}
+.img-thumbnail {
+  height: 80px;
+}
+
+.totalPrice {
+  width: 13rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.signinForm {
+  max-width: 50rem;
+}
+.checkout-steps div {
+  margin-top: 2rem;
+  border-bottom: 0.2rem solid #a0a0a0 color(#f08000);
+}
+
+.checkout-steps div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
+}
+.edit-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+}
+
+.orderPage {
+  margin-top: 1.5rem;
+}
+
+.product-name {
+  margin-right: 3.5rem;
+}
+.productdetails {
+  text-align: center;
+}
+.center-message {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.active-nav {
+  left: 0;
+}
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Start offscreen to the left */
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1000; /* Ensure the sidebar is on top of other content */
+}
+
+.sidebar.open {
+  left: 0; /* Slide in from the left when open */
+}
+
+/* You can add more styling as needed */
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}

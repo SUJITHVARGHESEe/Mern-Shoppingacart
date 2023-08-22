@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "express-async-handler": "^1.2.0"
+  },
+  "name": "mernamazona",
+  "description": "1. introduction\r 2. install tools\r 3. create react app\r 4. create git repository",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
